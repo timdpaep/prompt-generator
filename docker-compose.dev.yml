@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  prompt-generator:
+    build: .
+    container_name: prompt-generator-app
+    ports:
+      # Map port 8085 on your server to port 80 inside the container
+      # You can change 8085 to any other unused port
+      - "8085:80"
+    restart: unless-stopped

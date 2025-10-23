@@ -1,0 +1,17 @@
+version: "3.8"
+
+networks:
+  caddy:
+    external: true
+    name: caddy
+
+services:
+  prompt-generator:
+    container_name: prompt-generator
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    networks: [caddy]
+    expose:
+      - "80"

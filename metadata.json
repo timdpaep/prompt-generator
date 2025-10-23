@@ -1,0 +1,5 @@
+{
+  "name": "Prompt Framework Generator",
+  "description": "A web application to help users generate structured prompts based on 10 different prompting frameworks. Select a framework, fill in the fields, and generate a complete, copyable prompt.",
+  "requestFramePermissions": []
+}
